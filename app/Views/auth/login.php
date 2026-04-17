@@ -4,7 +4,7 @@
 
 <h2>Login</h2>
 
-<!-- ✅ Show validation errors -->
+
 <?php if (session()->get('errors')): ?>
     <div class="alert alert-danger">
         <?php foreach (session()->get('errors') as $error): ?>
@@ -13,7 +13,7 @@
     </div>
 <?php endif; ?>
 
-<!-- ✅ Show login error -->
+
 <?php if (session()->getFlashdata('error')): ?>
     <div class="alert alert-danger">
         <?= session()->getFlashdata('error') ?>
@@ -22,7 +22,7 @@
 
 <form method="post" action="/check">
     
-    <?= csrf_field(); ?> <!-- 🔥 IMPORTANT -->
+    <?= csrf_field(); ?>
 
     <input type="email" name="email" placeholder="Enter Email" required>
     <br><br>

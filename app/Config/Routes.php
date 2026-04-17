@@ -13,7 +13,7 @@ $routes->get('/posts', 'Posts::index');
 $routes->get('/posts/create', 'Posts::create');
 $routes->post('/posts/store', 'Posts::store');
 
-$routes->get('/posts/(:num)/detail', 'Posts::detail/$1'); // ⭐ ADD THIS
+$routes->get('/posts/(:num)/detail', 'Posts::detail/$1'); 
 
 $routes->get('/posts/edit/(:num)', 'Posts::edit/$1');
 $routes->post('/posts/update/(:num)', 'Posts::update/$1');

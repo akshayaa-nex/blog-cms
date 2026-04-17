@@ -9,8 +9,6 @@ class PostModel extends Model
     protected $table = 'posts';
 
     protected $allowedFields = ['user_id', 'title', 'content'];
-
-    // 🔥 ADD THIS
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
